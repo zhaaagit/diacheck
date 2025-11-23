@@ -58,13 +58,14 @@ export default function StartPage() {
     try {
       setLoading(true);
 
-      const response = await fetch("http://localhost:5000/predict", {
+      const API_BASE = process.env.NEXT_PUBLIC_API_BASE;
+
+      const response = await fetch(`${API_BASE}/predict`, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
+
 
       const data = await response.json();
       console.log("RESPON BACKEND:", data);
