@@ -1,5 +1,8 @@
 "use client";
 
+import Link from "next/link";
+
+
 const API_BASE =
   process.env.NEXT_PUBLIC_API_BASE ||
   "https://pirpir-diacheck-backend.hf.space";
@@ -305,6 +308,10 @@ export default function StartPage() {
               >
                 Reset isian
               </button>
+              <Link
+                href="/full"
+                 className="text-xs sm:text-sm text-blue-600 hover:text-blue-800"
+              >Mode Advance</Link>
             </div>
 
             <p className="text-[11px] sm:text-xs text-slate-500 pt-1">
