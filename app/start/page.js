@@ -62,8 +62,6 @@ export default function StartPage() {
     try {
       setLoading(true);
 
-      const API_BASE = process.env.NEXT_PUBLIC_API_BASE;
-
       const response = await fetch(`${API_BASE}/predict`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
