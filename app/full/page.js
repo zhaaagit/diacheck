@@ -1,5 +1,10 @@
 "use client";
 
+const API_BASE =
+  process.env.NEXT_PUBLIC_API_BASE ||
+  "https://huggingface.co/spaces/pirpir/diacheck-backend"; // ganti dengan URL Space-mu yang benar
+
+
 import { useState } from "react";
 
 const initialForm = {
