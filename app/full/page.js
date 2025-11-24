@@ -297,8 +297,8 @@ export default function FullTestPage() {
                            text-slate-800
                            focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-slate-400"
               >
-                <option value="never">Tidak pernah merokok</option>
-                <option value="current">Sedang merokok</option>
+                <option value="never">Tidak merokok</option>
+                <option value="current">Merokok</option>
               </select>
             </div>
 
