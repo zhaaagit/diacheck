@@ -299,8 +299,6 @@ export default function FullTestPage() {
               >
                 <option value="never">Tidak pernah merokok</option>
                 <option value="current">Sedang merokok</option>
-                <option value="former">Pernah merokok, sekarang berhenti</option>
-                <option value="No Info">Informasi tidak diketahui</option>
               </select>
             </div>
 
