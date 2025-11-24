@@ -94,55 +94,6 @@ export default function Home() {
             </p>
           </div>
         </section>
-
-        {/* Kanan: Ilustrasi */}
-        <section className="relative">
-          <div className="absolute -inset-4 rounded-3xl bg-teal-100/40 blur-2xl" />
-
-          <div className="relative rounded-3xl bg-white shadow-lg border border-slate-100 p-6 md:p-7 flex flex-col gap-4">
-            <p className="text-xs font-medium text-teal-700 uppercase tracking-wide">
-              Contoh ringkasan risiko
-            </p>
-
-            <div className="flex items-baseline justify-between">
-              <div>
-                <p className="text-xs text-slate-500">Perkiraan risiko</p>
-                <p className="text-3xl font-semibold text-slate-900">
-                  32<span className="text-base align-super">%</span>
-                </p>
-              </div>
-              <div className="text-right">
-                <p className="text-xs text-slate-500">Kategori</p>
-                <p className="text-sm font-semibold text-amber-600">
-                  Sedang (Waspada)
-                </p>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-2 gap-3 text-xs md:text-sm">
-              <div className="rounded-2xl bg-slate-50 p-3">
-                <p className="font-semibold text-slate-800 mb-1">
-                  Faktor utama
-                </p>
-                <p className="text-slate-600">
-                  IMT tinggi, riwayat keluarga, pola makan tinggi gula.
-                </p>
-              </div>
-              <div className="rounded-2xl bg-slate-50 p-3">
-                <p className="font-semibold text-slate-800 mb-1">
-                  Rekomendasi awal
-                </p>
-                <p className="text-slate-600">
-                  Konsultasi dokter, cek gula darah & mulai pola hidup sehat.
-                </p>
-              </div>
-            </div>
-
-            <p className="text-[11px] md:text-xs text-slate-500 border-t pt-3">
-              *Data di atas hanya contoh visual, bukan hasil prediksi Anda.
-            </p>
-          </div>
-        </section>
       </div>
 
       {/* Modal Mode Selection */}
