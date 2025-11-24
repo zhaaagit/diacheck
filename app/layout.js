@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
           {/* Header */}
           <header className="w-full border-b border-red-100 bg-white px-5 py-3 flex items-center justify-between">
             <div className="text-lg font-semibold tracking-tight text-red-600">
-              <a href="/https://diacheck-lah.vercel.app">DiaCheck</a>
+              <a href="/">DiaCheck</a>
             </div>
 
             <div className="text-xs sm:text-sm text-slate-500">
