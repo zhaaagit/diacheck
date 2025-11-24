@@ -55,7 +55,7 @@ export default function FullTestPage() {
     const bmi = heightM > 0 ? Number((weight / (heightM * heightM)).toFixed(1)) : null;
 
     if (!bmi || isNaN(bmi)) {
-      setError("Tinggi dan berat badan tidak valid untuk menghitung IMT.");
+      setError("Tinggi dan berat badan tidak valid untuk menghitung BMI.");
       return;
     }
 
@@ -401,10 +401,10 @@ export default function FullTestPage() {
                   {result.bmi && (
                     <div className="rounded-xl bg-slate-50 border border-slate-100 p-3">
                       <p className="font-semibold text-slate-800 mb-1">
-                        Indeks massa tubuh (IMT)
+                        Body Mass Index (BMI)
                       </p>
                       <p className="text-slate-700">
-                        IMT Anda sekitar{" "}
+                        BMI Anda sekitar{" "}
                         <span className="font-semibold">{result.bmi}</span>.
                       </p>
                     </div>
@@ -435,7 +435,7 @@ export default function FullTestPage() {
 
                 <p className="text-[11px] sm:text-xs text-slate-500 border-t border-slate-100 pt-3">
                   *Perhitungan di atas menggunakan model machine learning dengan
-                  mempertimbangkan data IMT, riwayat kesehatan, dan hasil lab.
+                  mempertimbangkan data BMI, riwayat kesehatan, dan hasil lab.
                   Hasil bukan pengganti diagnosis. Untuk penilaian lebih akurat,
                   silakan konsultasikan dengan tenaga kesehatan.
                 </p>
