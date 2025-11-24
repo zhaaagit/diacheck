@@ -46,7 +46,7 @@ export default function StartPage() {
     const bmi = heightM > 0 ? Number((weight / (heightM * heightM)).toFixed(1)) : null;
 
     if (!bmi || isNaN(bmi)) {
-      setError("Tinggi dan berat badan tidak valid untuk menghitung IMT.");
+      setError("Tinggi dan berat badan tidak valid untuk menghitung BMI.");
       return;
     }
 
@@ -281,8 +281,8 @@ export default function StartPage() {
                            text-slate-800
                            focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-slate-400"
               >
-                <option value="never">Tidak pernah merokok</option>
-                <option value="current">Sedang merokok</option>
+                <option value="never">Tidak merokok</option>
+                <option value="current">Merokok</option>
               </select>
             </div>
 
@@ -344,10 +344,10 @@ export default function StartPage() {
                 {result.bmi && (
                   <div className="rounded-xl bg-slate-50 border border-slate-100 p-3 text-xs sm:text-sm">
                     <p className="font-semibold text-slate-800 mb-1">
-                      Perkiraan indeks massa tubuh (IMT)
+                      Perkiraan indeks massa tubuh (BMI)
                     </p>
                     <p className="text-slate-700">
-                      IMT Anda sekitar{" "}
+                      BMI Anda sekitar{" "}
                       <span className="font-semibold">{result.bmi}</span>. Nilai
                       ini dihitung dari tinggi dan berat badan yang Anda isi.
                     </p>
