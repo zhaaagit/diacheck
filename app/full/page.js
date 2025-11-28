@@ -1,5 +1,4 @@
 "use client";
-
 const API_BASE =
   process.env.NEXT_PUBLIC_API_BASE ||
   "https://pirpir-diacheck-backend.hf.space";
@@ -359,6 +358,14 @@ export default function FullTestPage() {
               >
                 Reset isian
               </button>
+              <a
+                 href="/start"
+                  className="inline-flex items-center justify-center rounded-full bg-slate-200 px-4 py-2 text-xs sm:text-sm font-medium text-slate-700 hover:bg-slate-300 transition"
+              >
+                 Mode Normal
+              </a>
+
+
             </div>
 
             <p className="text-[11px] sm:text-xs text-slate-500 pt-1">
